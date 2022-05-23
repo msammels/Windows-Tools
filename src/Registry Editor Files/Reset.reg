@@ -1,0 +1,29 @@
+Windows Registry Editor Version 5.00
+
+;
+;  Reset
+;  This resets the Recently Used Files
+;  Indentical to the Batch File, but just as effective
+;
+;  Copyright © 2015 Michael Sammels. All rights reserved.
+;
+
+[-HKEY_CURRENT_USER\Software\Microsoft\Windows\ShellNoRoam\BagMRU]
+[-HKEY_CURRENT_USER\Software\Microsoft\Windows\ShellNoRoam\Bags]
+[-HKEY_CURRENT_USER\Software\Microsoft\Windows\Shell\BagMRU]
+[-HKEY_CURRENT_USER\Software\Microsoft\Windows\Shell\Bags]
+
+[-HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\Windows\Shell\BagMRU]
+[-HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\Windows\Shell\Bags]
+
+[HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\Windows\Shell]
+"BagMRU Size"=dword:00004e20
+
+[HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\Windows\Shell\Bags\AllFolders\Shell]
+"FolderType"="NotSpecified"
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"NoSaveSettings"=-
+
+[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"NoSaveSettings"=-
